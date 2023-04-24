@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
+title: SYBlog
+subtitle: 'SY&博客'
+description: '记录日常碎片化学习内容'
 keywords:
-author: John Doe
-language: en
+author: SY
+language: zh-CN
 timezone: ''
 
 # URL
@@ -45,7 +45,7 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
+  line_number: false
   auto_detect: false
   tab_replace: ''
   wrap: true
@@ -103,6 +103,5 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo:
-    github: https://github.com/studysy/myblod.git
+  repository: git@github.com:studysy/myblod.github.io.git
   branch: master
