@@ -3,6 +3,7 @@ title: mysql
 date: 2023-04-27 09:57:22
 tags:
 categories: 学习总结
+cover: https://s2.loli.net/2023/05/31/OTd3KZEwMhI42Ue.jpg
 ---
 ## mysql关系型数据库(Relational Database Management System)
 ### MySQL 创建数据库
