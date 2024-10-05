@@ -7,7 +7,7 @@ cover: https://s2.loli.net/2023/06/01/gnxaLjuDhvIOkeS.jpg
 ---
 ### github干货
 
-##### github远程拉取代码
+##### github初次提交代码
 
     ```
     # 初始化本地仓库（如果你之前没有这么做）
@@ -25,7 +25,7 @@ cover: https://s2.loli.net/2023/06/01/gnxaLjuDhvIOkeS.jpg
 
 
 
-##### github提交代码
+##### github提交代码（提交过程中断网、遗忘）
 
     ```
         //原本已经commit的代码由于某些原因（遗忘、断网...）没有提交到远程服务器，导致你没有完成工作
@@ -36,3 +36,12 @@ cover: https://s2.loli.net/2023/06/01/gnxaLjuDhvIOkeS.jpg
         git commit
         git push -u origin master
         ```
+##### github拉取远程代码到本地
+
+    ```
+        git init
+        
+        
+        git clone <远程仓库URL>
+        
+    ```
