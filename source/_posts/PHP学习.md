@@ -18,3 +18,12 @@ cover: https://s2.loli.net/2023/06/01/H9mKU3fxFtX2sSi.jpg
         //运行请求的方法
         header("Access-Control-Allow-Methods: *");
         ```
+##### TP使用多字段模糊查询
+        ```
+        $where['tree_path|inviter'] = array(['like', '%' . $account . ',%'], ['like', $account], '_multi' => true);
+        
+        注： ‘|’：表示 or
+        _multi' => true ： 表示多字段
+        ————————————————
+     
+        ```
