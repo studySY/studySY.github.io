@@ -1,0 +1,189 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>mysql | SYBlog</title><meta name="author" content="SY"><meta name="copyright" content="SY"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="mysql关系型数据库(Relational Database Management System)MySQL 创建数据库 我们可以在登陆 MySQL 服务后，使用 create 命令创建数据库，语法如下:create database 数据库名称 以下命令简单的演示了创建数据库的过程，数据名为 local:&#x2F;&#x2F;连接数据库[root@host]# mysql -u root -p   Enter">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mysql">
+<meta property="og:url" content="https://my.cj0316.com/2023/04/27/mysql/index.html">
+<meta property="og:site_name" content="SYBlog">
+<meta property="og:description" content="mysql关系型数据库(Relational Database Management System)MySQL 创建数据库 我们可以在登陆 MySQL 服务后，使用 create 命令创建数据库，语法如下:create database 数据库名称 以下命令简单的演示了创建数据库的过程，数据名为 local:&#x2F;&#x2F;连接数据库[root@host]# mysql -u root -p   Enter">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2023/05/31/OTd3KZEwMhI42Ue.jpg">
+<meta property="article:published_time" content="2023-04-27T01:57:22.000Z">
+<meta property="article:modified_time" content="2024-10-05T04:40:10.394Z">
+<meta property="article:author" content="SY">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2023/05/31/OTd3KZEwMhI42Ue.jpg"><link rel="shortcut icon" href="https://s2.loli.net/2023/04/24/9K6u8MYyn3FGjHV.png"><link rel="canonical" href="https://my.cj0316.com/2023/04/27/mysql/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: SY","link":"链接: ","source":"来源: SYBlog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'mysql',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: true,
+  postUpdate: '2024-10-05 12:40:10'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/mycss.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/04/24/9K6u8MYyn3FGjHV.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2023/05/31/OTd3KZEwMhI42Ue.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="SYBlog"><span class="site-name">SYBlog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">mysql</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-04-27T01:57:22.000Z" title="发表于 2023-04-27 09:57:22">2023-04-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-05T04:40:10.394Z" title="更新于 2024-10-05 12:40:10">2024-10-05</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/">学习总结</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="mysql"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="mysql关系型数据库-Relational-Database-Management-System"><a href="#mysql关系型数据库-Relational-Database-Management-System" class="headerlink" title="mysql关系型数据库(Relational Database Management System)"></a>mysql关系型数据库(Relational Database Management System)</h2><h3 id="MySQL-创建数据库"><a href="#MySQL-创建数据库" class="headerlink" title="MySQL 创建数据库"></a>MySQL 创建数据库</h3><ul>
+<li>我们可以在登陆 MySQL 服务后，使用 create 命令创建数据库，语法如下:<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create database 数据库名称</span><br></pre></td></tr></table></figure></li>
+<li>以下命令简单的演示了创建数据库的过程，数据名为 local:<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//连接数据库</span><br><span class="line">[root@host]# mysql -u root -p   </span><br><span class="line">Enter password:******  # 登录后进入终端</span><br><span class="line">//创建数据库</span><br><span class="line">mysql&gt; create database local;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h5 id="使用-mysqladmin-创建数据库"><a href="#使用-mysqladmin-创建数据库" class="headerlink" title="使用 mysqladmin 创建数据库"></a>使用 mysqladmin 创建数据库</h5><ul>
+<li>使用普通用户，你可能需要特定的权限来创建或者删除 MySQL 数据库。所以我们这边使用root用户登录，root用户拥有最高权限，可以使用 mysql mysqladmin 命令来创建数据库。以下命令简单的演示了创建数据库的过程，数据名为 RUNOOB:<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//执行成功后会创建 MySQL 数据库 RUNOOB。</span><br><span class="line">[root@host]# mysqladmin -u root -p create local</span><br><span class="line">Enter password:******</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="MySQL-事务"><a href="#MySQL-事务" class="headerlink" title="MySQL 事务"></a>MySQL 事务</h3><ul>
+<li>在 MySQL 中只有使用了 Innodb 数据库引擎的数据库或表才支持事务。</li>
+<li>事务处理可以用来维护数据库的完整性，保证成批的 SQL 语句要么全部执行，要么全部不执行。</li>
+<li>事务用来管理 insert,update,delete 语句</li>
+<li>一般来说，事务是必须满足4个条件（ACID）：：原子性（Atomicity，或称不可分割性）、一致性（Consistency）、隔离性（Isolation，又称独立性）、持久性（Durability）。<ul>
+<li>原子性：一个事务（transaction）中的所有操作，要么全部完成，要么全部不完成，不会结束在中间某个环节。事务在执行过程中发生错误，会被回滚（Rollback）到事务开始前的状态，就像这个事务从来没有执行过一样。</li>
+<li>一致性：在事务开始之前和事务结束以后，数据库的完整性没有被破坏。这表示写入的资料必须完全符合所有的预设规则，这包含资料的精确度、串联性以及后续数据库可以自发性地完成预定的工作。</li>
+<li>隔离性：数据库允许多个并发事务同时对其数据进行读写和修改的能力，隔离性可以防止多个事务并发执行时由于交叉执行而导致数据的不一致。事务隔离分为不同级别，包括读未提交（Read uncommitted）、读提交（read committed）、可重复读（repeatable read）和串行化（Serializable）。</li>
+<li>持久性：事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失。</li>
+</ul>
+</li>
+</ul>
+<h5 id="MYSQL-事务处理主要有两种方法："><a href="#MYSQL-事务处理主要有两种方法：" class="headerlink" title="MYSQL 事务处理主要有两种方法："></a>MYSQL 事务处理主要有两种方法：</h5><p>1、用 BEGIN, ROLLBACK, COMMIT来实现</p>
+<ul>
+<li>BEGIN 开始一个事务</li>
+<li>ROLLBACK 事务回滚</li>
+<li>COMMIT 事务确认（提交）<br>2、直接用 SET 来改变 MySQL 的自动提交模式:</li>
+<li>SET AUTOCOMMIT&#x3D;0 禁止自动提交</li>
+<li>SET AUTOCOMMIT&#x3D;1 开启自动提交</li>
+</ul>
+<h5 id="thinkPHP5中使用事务案例"><a href="#thinkPHP5中使用事务案例" class="headerlink" title="thinkPHP5中使用事务案例"></a>thinkPHP5中使用事务案例</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//1、引用TP5的think\Db类：use think\Db;</span><br><span class="line">//2、下面为实现代码：</span><br><span class="line">Db::startTrances();//启动事务</span><br><span class="line">try&#123;</span><br><span class="line"></span><br><span class="line">update tableName set name = &#x27;123&#x27; where id = 1;</span><br><span class="line">Db::commit();//提交事务</span><br><span class="line"></span><br><span class="line">&#125;catch(\PDOException $e) &#123;</span><br><span class="line"></span><br><span class="line">Db::rollback();//回滚</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="mysql数据处理"><a href="#mysql数据处理" class="headerlink" title="mysql数据处理"></a>mysql数据处理</h3><ul>
+<li>对数据库的直接操作，通过语句直接操作数据库</li>
+</ul>
+<h5 id="创建临时表（临时表具有时效性，可能在使用过程中自动销毁掉）"><a href="#创建临时表（临时表具有时效性，可能在使用过程中自动销毁掉）" class="headerlink" title="创建临时表（临时表具有时效性，可能在使用过程中自动销毁掉）"></a>创建临时表（临时表具有时效性，可能在使用过程中自动销毁掉）</h5><pre><code>    <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-- 创建临时表</span><br><span class="line">create temporary table &#x27;表名&#x27;</span><br><span class="line">-- 删除临时表</span><br><span class="line">DROP TEMPORARY TABLE &#x27;表名&#x27;;</span><br><span class="line">--查询临时表</span><br><span class="line">select * from &#x27;临时表名&#x27;</span><br></pre></td></tr></table></figure>
+</code></pre>
+<h5 id="查询到A表中的数据新增到一个不存在的表B中"><a href="#查询到A表中的数据新增到一个不存在的表B中" class="headerlink" title="查询到A表中的数据新增到一个不存在的表B中"></a>查询到A表中的数据新增到一个不存在的表B中</h5><pre><code>    <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- 创建并将数据新增到B表中</span><br><span class="line">create table B  select * from A;</span><br><span class="line">- 将数据插入已经存在的表中（注意查询出的字段名称和将要插入的字段名匹配）</span><br><span class="line">insert into B select * from A;</span><br></pre></td></tr></table></figure>
+</code></pre>
+<h5 id="聚合查询"><a href="#聚合查询" class="headerlink" title="聚合查询"></a>聚合查询</h5><pre><code>    <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/**</span><br><span class="line">3609406079001311714	多功能	家用组装晒鞋神器落地式铁艺阳台室外晒鞋架子宿舍多功能鞋架挂式	衣帽架卧室宿舍挂衣架家用简约多功能组装挂包置物架简易落地鞋架	3616868857442101304	鞋子收纳架	https://p9-aio.ecombdimg.com/obj/ecom-shop-material/rgNpyAZY_m_6cfef9a620bcd39cd191b6c9974ccf3c_sx_828678_www1080-1080	https://p6-aio.ecombdimg.com/obj/ecom-shop-material/pkpHwDgi_m_e7ce9167982405267b53202aeeafc4b8_sx_95354_www1024-1024</span><br><span class="line"></span><br><span class="line">3609406079001311714	室外	家用组装晒鞋神器落地式铁艺阳台室外晒鞋架子宿舍多功能鞋架挂式	晾晒鞋架室内阳台挂鞋钩窗外防风凉鞋架子室外鞋挂鞋勾晒鞋子神器	3537781505696888549	鞋子收纳架	https://p9-aio.ecombdimg.com/obj/ecom-shop-material/rgNpyAZY_m_6cfef9a620bcd39cd191b6c9974ccf3c_sx_828678_www1080-1080	https://p9-aio.ecombdimg.com/obj/ecom-shop-material/v1_iIvUujMM_70755621364282001950711_0fc69cc5d2dc68e565333b9242871a3b_sx_1033</span><br><span class="line">*/</span><br><span class="line"></span><br><span class="line">//将想要聚合的数据进行聚合成为一个串，这样可以将不需要聚合的数据拼在一个传中</span><br><span class="line">select GROUP_CONCAT(word_res) as word_res,fgoodsname,GROUP_CONCAT(goodsname) as goodsname GROUP BY fgoodsid</span><br><span class="line"></span><br><span class="line">group_concat( [distinct] 要连接的字段 [order by 排序字段 asc/desc ] [separator &#x27;分隔符&#x27;] )</span><br><span class="line">SELECT PARENT_ID, GROUP_CONCAT(distinct a.REGION_ID order by a.REGION_ID asc separator &#x27;;&#x27;) GROUP BY PARENT_ID</span><br><span class="line">*注意事项</span><br><span class="line">最大值限制GROUP_CONCAT() 是有最大长度限制的，默认值是 1024。当总长度达到 1024 后，后面的记录就被截断掉。可以通过 group_concat_max_len 参数进行动态设置。参数范围可以是 Global 或 Session类型如果group_concat_max_len 的值被设置为小等于 512，那么 GROUP_CONCAT 的返回值类型是 VARCHAR 或 VARBINARY；否则是 TEXT 或 BLOB。实际上，group_concat_max_len 的值可以设置非常大，但会受到参数max_allowed_packet 的限制</span><br></pre></td></tr></table></figure>
+</code></pre>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://my.cj0316.com">SY</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://my.cj0316.com/2023/04/27/mysql/">https://my.cj0316.com/2023/04/27/mysql/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://my.cj0316.com" target="_blank">SYBlog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://s2.loli.net/2023/05/31/OTd3KZEwMhI42Ue.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2023/06/01/go%E5%AD%A6%E4%B9%A0/" title="go学习"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/06/01/WUIQtV3eAGwzFXj.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">go学习</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/04/24/9K6u8MYyn3FGjHV.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">SY</div><div class="author-info__description">记录日常碎片化学习内容</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/studysy/myblod.github.io.git"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/studysy/myblod.github.io" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:136194452@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">此博客为记录个人学习中的内容，如有侵权请第一时间联系我</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#mysql%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93-Relational-Database-Management-System"><span class="toc-number">1.</span> <span class="toc-text">mysql关系型数据库(Relational Database Management System)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#MySQL-%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">1.1.</span> <span class="toc-text">MySQL 创建数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-mysqladmin-%E5%88%9B%E5%BB%BA%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">1.1.0.1.</span> <span class="toc-text">使用 mysqladmin 创建数据库</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MySQL-%E4%BA%8B%E5%8A%A1"><span class="toc-number">1.2.</span> <span class="toc-text">MySQL 事务</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#MYSQL-%E4%BA%8B%E5%8A%A1%E5%A4%84%E7%90%86%E4%B8%BB%E8%A6%81%E6%9C%89%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%B3%95%EF%BC%9A"><span class="toc-number">1.2.0.1.</span> <span class="toc-text">MYSQL 事务处理主要有两种方法：</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#thinkPHP5%E4%B8%AD%E4%BD%BF%E7%94%A8%E4%BA%8B%E5%8A%A1%E6%A1%88%E4%BE%8B"><span class="toc-number">1.2.0.2.</span> <span class="toc-text">thinkPHP5中使用事务案例</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mysql%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86"><span class="toc-number">1.3.</span> <span class="toc-text">mysql数据处理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E4%B8%B4%E6%97%B6%E8%A1%A8%EF%BC%88%E4%B8%B4%E6%97%B6%E8%A1%A8%E5%85%B7%E6%9C%89%E6%97%B6%E6%95%88%E6%80%A7%EF%BC%8C%E5%8F%AF%E8%83%BD%E5%9C%A8%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E8%87%AA%E5%8A%A8%E9%94%80%E6%AF%81%E6%8E%89%EF%BC%89"><span class="toc-number">1.3.0.1.</span> <span class="toc-text">创建临时表（临时表具有时效性，可能在使用过程中自动销毁掉）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E5%88%B0A%E8%A1%A8%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E6%96%B0%E5%A2%9E%E5%88%B0%E4%B8%80%E4%B8%AA%E4%B8%8D%E5%AD%98%E5%9C%A8%E7%9A%84%E8%A1%A8B%E4%B8%AD"><span class="toc-number">1.3.0.2.</span> <span class="toc-text">查询到A表中的数据新增到一个不存在的表B中</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%81%9A%E5%90%88%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.3.0.3.</span> <span class="toc-text">聚合查询</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/12/14/css%E5%AD%A6%E4%B9%A0/" title="Css学习"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2024/12/14/pN64PgcvDCXAqax.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Css学习"/></a><div class="content"><a class="title" href="/2024/12/14/css%E5%AD%A6%E4%B9%A0/" title="Css学习">Css学习</a><time datetime="2024-12-14T05:36:00.000Z" title="发表于 2024-12-14 13:36:00">2024-12-14</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/05/hello-world/" title="Hello World">Hello World</a><time datetime="2024-10-05T04:40:10.394Z" title="发表于 2024-10-05 12:40:10">2024-10-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/01/github%E5%91%BD%E4%BB%A4/" title="github命令"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/06/01/gnxaLjuDhvIOkeS.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="github命令"/></a><div class="content"><a class="title" href="/2023/06/01/github%E5%91%BD%E4%BB%A4/" title="github命令">github命令</a><time datetime="2023-06-01T01:39:02.000Z" title="发表于 2023-06-01 09:39:02">2023-06-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/01/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%B1%87%E6%80%BB/" title="工具使用汇总"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/06/01/G6edYDPKOLlJR8W.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="工具使用汇总"/></a><div class="content"><a class="title" href="/2023/06/01/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%B1%87%E6%80%BB/" title="工具使用汇总">工具使用汇总</a><time datetime="2023-06-01T01:30:49.000Z" title="发表于 2023-06-01 09:30:49">2023-06-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/06/01/PHP%E5%AD%A6%E4%B9%A0/" title="PHP学习"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/06/01/H9mKU3fxFtX2sSi.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PHP学习"/></a><div class="content"><a class="title" href="/2023/06/01/PHP%E5%AD%A6%E4%B9%A0/" title="PHP学习">PHP学习</a><time datetime="2023-06-01T01:28:11.000Z" title="发表于 2023-06-01 09:28:11">2023-06-01</time></div></div></div></div></div></div></main><footer id="footer" style="background: linear-gradient( 135deg,"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2024 By SY</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">I wish you to become your own sun, no need to rely on who's light.<p><a target="_blank" href="https://hexo.io/"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为Hexo"></a>&nbsp;<a target="_blank" href="https://butterfly.js.org/"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用butterfly"></a>&nbsp;<a target="_blank" href="https://www.jsdelivr.com/"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr" title="本站使用JsDelivr为静态资源提供CDN加速"></a> &nbsp;<a target="_blank" href="https://vercel.com/ "><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-Vervel-brightgreen?style=flat&logo=Vercel" title="本站采用双线部署，默认线路托管于Vercel"></a>&nbsp;<a target="_blank" href="https://vercel.com/ "><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-Coding-0cedbe?style=flat&logo=Codio" title="本站采用双线部署，联通线路托管于Coding"></a>&nbsp;<a target="_blank" href="https://github.com/"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由Gtihub托管"></a>&nbsp;<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"></div><script type="text/javascript" src="/js/fairyDustCursor.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="true" data-text="I,LOVE,YOU" data-fontsize="15px" data-random="true" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>

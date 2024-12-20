@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Css学习</title>
+      <link href="/2024/12/14/css%E5%AD%A6%E4%B9%A0/"/>
+      <url>/2024/12/14/css%E5%AD%A6%E4%B9%A0/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Css干货"><a href="#Css干货" class="headerlink" title="Css干货"></a>Css干货</h3><h5 id="Css标签背景相关"><a href="#Css标签背景相关" class="headerlink" title="Css标签背景相关"></a>Css标签背景相关</h5><pre><code>//背景颜色- background-color：#fff   //背景图片（默认图片重复）- background-image：url(&quot;图片地址&quot;)//设置图片是否重复（如果不加入repeat，默认为重复）- background-repeat：no-repeat(不允许重复)、repeat-x(水平重复)、repeat-y(垂直重复)、repeat(水平垂直都重复)- background-position：center center(默认)、left top(左上角)、right bottom(右下角)、50% 50%(50% 50%为图片中心)//right 右边从图片中间开始显示- background-position：right- background-attachment：fixed(背景固定，不随滚动条滚动)、scroll(背景随滚动条滚动)- background-size：cover(图片填满整个背景)、contain(图片自适应背景)- background-origin：border-box(默认，背景从边框开始)、padding-box(背景从内边距开始)、content-box(背景从内容开始)- background-clip：border-box(默认，背景从边框开始)、padding-box(背景从内边距开始)、content-box(背景从内容开始)</code></pre><h5 id="Css文本相关"><a href="#Css文本相关" class="headerlink" title="Css文本相关"></a>Css文本相关</h5><pre><code>//文本颜色- color：#fff//文本方向- direction：rtl(从右向左)//行高- line-height：1.5em(行高)//字符间距- letter-spacing：1px(字间距)//对齐元素中的文本- text-align：left(默认)、right、center、justify//向文本添加修饰- text-decoration: none(默认)、underline(下划线)、overline(上划线)、line-through(删除线)//缩进元素中文本的首行- text-indent：2em(缩进2em)//文本溢出省略号- text-overflow：ellipsis(省略号)//文本换行- white-space：nowrap(默认，不换行)、pre(保留空格换行)、pre-wrap(保留空格换行，但超过一行换行)、pre-line(保留空格不换行，但超过一行换行)//元素中的字母- text-transform：capitalize(首字母大写)、uppercase(全部大写)、lowercase(全部小写)//设置文本方向- unicode-bidi：normal(默认)、embed(嵌入)、bidi-override(重写)//字间距- word-spacing：1px(字间距)//向文本添加阴影- text-shadow：1px 1px 1px #000(阴影)//规定文本的换行规则- word-wrap：normal(默认)、break-word(强制换行)</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习总结 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2024/10/05/hello-world/"/>
+      <url>/2024/10/05/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>github命令</title>
+      <link href="/2023/06/01/github%E5%91%BD%E4%BB%A4/"/>
+      <url>/2023/06/01/github%E5%91%BD%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<h3 id="github干货"><a href="#github干货" class="headerlink" title="github干货"></a>github干货</h3><h5 id="github初次提交代码"><a href="#github初次提交代码" class="headerlink" title="github初次提交代码"></a>github初次提交代码</h5><pre><code><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 初始化本地仓库（如果你之前没有这么做）</span><br><span class="line">git init</span><br><span class="line"># 添加远程仓库地址（将URL替换为你的远程仓库地址）</span><br><span class="line">git remote add origin &lt;远程仓库URL&gt;</span><br><span class="line"># 添加文件到暂存区</span><br><span class="line">git add .</span><br><span class="line"># 提交更改</span><br><span class="line">git commit -m &quot;提交备注&quot;</span><br><span class="line"># 将本地的 master 分支推送到远程仓库，同时设置上游（upstream）</span><br><span class="line">git push -u origin master</span><br><span class="line"></span><br></pre></td></tr></table></figure></code></pre><h5 id="github提交代码（提交过程中断网、遗忘）"><a href="#github提交代码（提交过程中断网、遗忘）" class="headerlink" title="github提交代码（提交过程中断网、遗忘）"></a>github提交代码（提交过程中断网、遗忘）</h5><pre><code><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//原本已经commit的代码由于某些原因（遗忘、断网...）没有提交到远程服务器，导致你没有完成工作</span><br><span class="line">git cherry </span><br><span class="line">git init</span><br><span class="line">git remote add origin https://e.coding.net/lv136194452/gerenziliao/myblod.git</span><br><span class="line">git add -A</span><br><span class="line">git commit</span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure></code></pre><h5 id="github拉取远程代码到本地"><a href="#github拉取远程代码到本地" class="headerlink" title="github拉取远程代码到本地"></a>github拉取远程代码到本地</h5><pre><code><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">git clone &lt;远程仓库URL&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习总结 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>工具使用汇总</title>
+      <link href="/2023/06/01/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%B1%87%E6%80%BB/"/>
+      <url>/2023/06/01/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%B1%87%E6%80%BB/</url>
+      
+        <content type="html"><![CDATA[<h3 id="VScode"><a href="#VScode" class="headerlink" title="VScode"></a>VScode</h3><ul><li>去除不必要的空格或者注释<ul><li>去空行：^\s*(?&#x3D;\r?$)\n</li><li>去多行：&#x2F;*(.|\r\n|\n)*?*&#x2F;</li><li>去单行：(?&lt;!http:|https:|ftp:|ftps:|file:)//.*</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习总结 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>PHP学习</title>
+      <link href="/2023/06/01/PHP%E5%AD%A6%E4%B9%A0/"/>
+      <url>/2023/06/01/PHP%E5%AD%A6%E4%B9%A0/</url>
+      
+        <content type="html"><![CDATA[<h3 id="请求类问题"><a href="#请求类问题" class="headerlink" title="请求类问题"></a>请求类问题</h3><h5 id="本地跨域请求设置（添加跨域头）"><a href="#本地跨域请求设置（添加跨域头）" class="headerlink" title="本地跨域请求设置（添加跨域头）"></a>本地跨域请求设置（添加跨域头）</h5><pre><code>    <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//请求时先进行options请求看是否存在跨域情况，之后再进行头部请求，为防止产生两次请求，我们在这里阻止options请求</span><br><span class="line">if($_SERVER[&#x27;REQUEST_METHOD&#x27;]==&#x27;OPTIONS&#x27;)&#123;</span><br><span class="line">    return &#x27;error&#x27;;</span><br><span class="line">&#125;</span><br><span class="line">header(&#x27;Access-Control-Allow-Origin: *&#x27;);</span><br><span class="line">header(&#x27;Access-Control-Allow-Headers: *&#x27;);</span><br><span class="line">//运行请求的方法</span><br><span class="line">header(&quot;Access-Control-Allow-Methods: *&quot;);</span><br></pre></td></tr></table></figure></code></pre><h5 id="TP使用多字段模糊查询"><a href="#TP使用多字段模糊查询" class="headerlink" title="TP使用多字段模糊查询"></a>TP使用多字段模糊查询</h5><pre><code>    <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$where[&#x27;tree_path|inviter&#x27;] = array([&#x27;like&#x27;, &#x27;%&#x27; . $account . &#x27;,%&#x27;], [&#x27;like&#x27;, $account], &#x27;_multi&#x27; =&gt; true);</span><br><span class="line"></span><br><span class="line">注： ‘|’：表示 or</span><br><span class="line">_multi&#x27; =&gt; true ： 表示多字段</span><br><span class="line">————————————————</span><br><span class="line">     </span><br></pre></td></tr></table></figure></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习总结 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>go学习</title>
+      <link href="/2023/06/01/go%E5%AD%A6%E4%B9%A0/"/>
+      <url>/2023/06/01/go%E5%AD%A6%E4%B9%A0/</url>
+      
+        <content type="html"><![CDATA[<h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><ul><li>Go官网下载地址：<a href="https://golang.org/dl/">https://golang.org/dl/</a> (打开有点慢)<ul><li>一定要记住安装位置</li></ul></li></ul><h3 id="配置GOPATH"><a href="#配置GOPATH" class="headerlink" title="配置GOPATH"></a>配置GOPATH</h3><ul><li>GOPATH是一个环境变量，用来表明你写的go项目的存放路径</li><li>GOPATH路径最好只设置一个，所有的项目代码都放到GOPATH的src目录下。</li></ul><h5 id="windows设置环境变量"><a href="#windows设置环境变量" class="headerlink" title="windows设置环境变量"></a>windows设置环境变量</h5><ul><li>我的电脑-&gt;属性-&gt;高级系统设置<ul><li>检查一下你的电脑里面是否存在<code>GOPATH</code>并且设置值为你要存<code>go</code>代码的目录</li><li>如果没有新建一个<code>GOPATH</code>，同时将值设置为你<code>go</code>项目的根目录</li><li>同时在<code>path</code>里面添加<code>go</code>的安装目录和<code>GOPATH</code>目录(自我感觉有异议，直接配置环境变量<code>path</code>可能就会好用，我的本地是直接配置的<code>path</code>变量)</li></ul></li></ul><h3 id="第一个go程序"><a href="#第一个go程序" class="headerlink" title="第一个go程序"></a>第一个go程序</h3><ul><li>在<code>go</code>程序中新建三个文件夹分别是：<code>bin</code>(用来存放编译后生成的可执行文件)、<code>pkg</code>(用来存放编译后生成的归档文件)、<code>src</code>(用来存放源码文件)<ul><li>在<code>src</code>目录下创建一个<code>hello目录</code>，在<code>hello目录</code>中创建一个<code>main.go</code>文件：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">package main          //声明main包，表名当前是一个可执行程序</span><br><span class="line"></span><br><span class="line">import &quot;fmt&quot;          //导入内置 fmt</span><br><span class="line"></span><br><span class="line">func main()&#123;  // main函数，是程序执行的入口</span><br><span class="line">    fmt.Println(&quot;Hello World!&quot;)  // 在终端打印 Hello World!</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习总结 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>mysql</title>
+      <link href="/2023/04/27/mysql/"/>
+      <url>/2023/04/27/mysql/</url>
+      
+        <content type="html"><![CDATA[<h2 id="mysql关系型数据库-Relational-Database-Management-System"><a href="#mysql关系型数据库-Relational-Database-Management-System" class="headerlink" title="mysql关系型数据库(Relational Database Management System)"></a>mysql关系型数据库(Relational Database Management System)</h2><h3 id="MySQL-创建数据库"><a href="#MySQL-创建数据库" class="headerlink" title="MySQL 创建数据库"></a>MySQL 创建数据库</h3><ul><li>我们可以在登陆 MySQL 服务后，使用 create 命令创建数据库，语法如下:<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create database 数据库名称</span><br></pre></td></tr></table></figure></li><li>以下命令简单的演示了创建数据库的过程，数据名为 local:<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//连接数据库</span><br><span class="line">[root@host]# mysql -u root -p   </span><br><span class="line">Enter password:******  # 登录后进入终端</span><br><span class="line">//创建数据库</span><br><span class="line">mysql&gt; create database local;</span><br></pre></td></tr></table></figure></li></ul><h5 id="使用-mysqladmin-创建数据库"><a href="#使用-mysqladmin-创建数据库" class="headerlink" title="使用 mysqladmin 创建数据库"></a>使用 mysqladmin 创建数据库</h5><ul><li>使用普通用户，你可能需要特定的权限来创建或者删除 MySQL 数据库。所以我们这边使用root用户登录，root用户拥有最高权限，可以使用 mysql mysqladmin 命令来创建数据库。以下命令简单的演示了创建数据库的过程，数据名为 RUNOOB:<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//执行成功后会创建 MySQL 数据库 RUNOOB。</span><br><span class="line">[root@host]# mysqladmin -u root -p create local</span><br><span class="line">Enter password:******</span><br><span class="line"></span><br></pre></td></tr></table></figure></li></ul><h3 id="MySQL-事务"><a href="#MySQL-事务" class="headerlink" title="MySQL 事务"></a>MySQL 事务</h3><ul><li>在 MySQL 中只有使用了 Innodb 数据库引擎的数据库或表才支持事务。</li><li>事务处理可以用来维护数据库的完整性，保证成批的 SQL 语句要么全部执行，要么全部不执行。</li><li>事务用来管理 insert,update,delete 语句</li><li>一般来说，事务是必须满足4个条件（ACID）：：原子性（Atomicity，或称不可分割性）、一致性（Consistency）、隔离性（Isolation，又称独立性）、持久性（Durability）。<ul><li>原子性：一个事务（transaction）中的所有操作，要么全部完成，要么全部不完成，不会结束在中间某个环节。事务在执行过程中发生错误，会被回滚（Rollback）到事务开始前的状态，就像这个事务从来没有执行过一样。</li><li>一致性：在事务开始之前和事务结束以后，数据库的完整性没有被破坏。这表示写入的资料必须完全符合所有的预设规则，这包含资料的精确度、串联性以及后续数据库可以自发性地完成预定的工作。</li><li>隔离性：数据库允许多个并发事务同时对其数据进行读写和修改的能力，隔离性可以防止多个事务并发执行时由于交叉执行而导致数据的不一致。事务隔离分为不同级别，包括读未提交（Read uncommitted）、读提交（read committed）、可重复读（repeatable read）和串行化（Serializable）。</li><li>持久性：事务处理结束后，对数据的修改就是永久的，即便系统故障也不会丢失。</li></ul></li></ul><h5 id="MYSQL-事务处理主要有两种方法："><a href="#MYSQL-事务处理主要有两种方法：" class="headerlink" title="MYSQL 事务处理主要有两种方法："></a>MYSQL 事务处理主要有两种方法：</h5><p>1、用 BEGIN, ROLLBACK, COMMIT来实现</p><ul><li>BEGIN 开始一个事务</li><li>ROLLBACK 事务回滚</li><li>COMMIT 事务确认（提交）<br>2、直接用 SET 来改变 MySQL 的自动提交模式:</li><li>SET AUTOCOMMIT&#x3D;0 禁止自动提交</li><li>SET AUTOCOMMIT&#x3D;1 开启自动提交</li></ul><h5 id="thinkPHP5中使用事务案例"><a href="#thinkPHP5中使用事务案例" class="headerlink" title="thinkPHP5中使用事务案例"></a>thinkPHP5中使用事务案例</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//1、引用TP5的think\Db类：use think\Db;</span><br><span class="line">//2、下面为实现代码：</span><br><span class="line">Db::startTrances();//启动事务</span><br><span class="line">try&#123;</span><br><span class="line"></span><br><span class="line">update tableName set name = &#x27;123&#x27; where id = 1;</span><br><span class="line">Db::commit();//提交事务</span><br><span class="line"></span><br><span class="line">&#125;catch(\PDOException $e) &#123;</span><br><span class="line"></span><br><span class="line">Db::rollback();//回滚</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="mysql数据处理"><a href="#mysql数据处理" class="headerlink" title="mysql数据处理"></a>mysql数据处理</h3><ul><li>对数据库的直接操作，通过语句直接操作数据库</li></ul><h5 id="创建临时表（临时表具有时效性，可能在使用过程中自动销毁掉）"><a href="#创建临时表（临时表具有时效性，可能在使用过程中自动销毁掉）" class="headerlink" title="创建临时表（临时表具有时效性，可能在使用过程中自动销毁掉）"></a>创建临时表（临时表具有时效性，可能在使用过程中自动销毁掉）</h5><pre><code>    <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">-- 创建临时表</span><br><span class="line">create temporary table &#x27;表名&#x27;</span><br><span class="line">-- 删除临时表</span><br><span class="line">DROP TEMPORARY TABLE &#x27;表名&#x27;;</span><br><span class="line">--查询临时表</span><br><span class="line">select * from &#x27;临时表名&#x27;</span><br></pre></td></tr></table></figure></code></pre><h5 id="查询到A表中的数据新增到一个不存在的表B中"><a href="#查询到A表中的数据新增到一个不存在的表B中" class="headerlink" title="查询到A表中的数据新增到一个不存在的表B中"></a>查询到A表中的数据新增到一个不存在的表B中</h5><pre><code>    <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- 创建并将数据新增到B表中</span><br><span class="line">create table B  select * from A;</span><br><span class="line">- 将数据插入已经存在的表中（注意查询出的字段名称和将要插入的字段名匹配）</span><br><span class="line">insert into B select * from A;</span><br></pre></td></tr></table></figure></code></pre><h5 id="聚合查询"><a href="#聚合查询" class="headerlink" title="聚合查询"></a>聚合查询</h5><pre><code>    <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/**</span><br><span class="line">3609406079001311714多功能家用组装晒鞋神器落地式铁艺阳台室外晒鞋架子宿舍多功能鞋架挂式衣帽架卧室宿舍挂衣架家用简约多功能组装挂包置物架简易落地鞋架3616868857442101304鞋子收纳架https://p9-aio.ecombdimg.com/obj/ecom-shop-material/rgNpyAZY_m_6cfef9a620bcd39cd191b6c9974ccf3c_sx_828678_www1080-1080https://p6-aio.ecombdimg.com/obj/ecom-shop-material/pkpHwDgi_m_e7ce9167982405267b53202aeeafc4b8_sx_95354_www1024-1024</span><br><span class="line"></span><br><span class="line">3609406079001311714室外家用组装晒鞋神器落地式铁艺阳台室外晒鞋架子宿舍多功能鞋架挂式晾晒鞋架室内阳台挂鞋钩窗外防风凉鞋架子室外鞋挂鞋勾晒鞋子神器3537781505696888549鞋子收纳架https://p9-aio.ecombdimg.com/obj/ecom-shop-material/rgNpyAZY_m_6cfef9a620bcd39cd191b6c9974ccf3c_sx_828678_www1080-1080https://p9-aio.ecombdimg.com/obj/ecom-shop-material/v1_iIvUujMM_70755621364282001950711_0fc69cc5d2dc68e565333b9242871a3b_sx_1033</span><br><span class="line">*/</span><br><span class="line"></span><br><span class="line">//将想要聚合的数据进行聚合成为一个串，这样可以将不需要聚合的数据拼在一个传中</span><br><span class="line">select GROUP_CONCAT(word_res) as word_res,fgoodsname,GROUP_CONCAT(goodsname) as goodsname GROUP BY fgoodsid</span><br><span class="line"></span><br><span class="line">group_concat( [distinct] 要连接的字段 [order by 排序字段 asc/desc ] [separator &#x27;分隔符&#x27;] )</span><br><span class="line">SELECT PARENT_ID, GROUP_CONCAT(distinct a.REGION_ID order by a.REGION_ID asc separator &#x27;;&#x27;) GROUP BY PARENT_ID</span><br><span class="line">*注意事项</span><br><span class="line">最大值限制GROUP_CONCAT() 是有最大长度限制的，默认值是 1024。当总长度达到 1024 后，后面的记录就被截断掉。可以通过 group_concat_max_len 参数进行动态设置。参数范围可以是 Global 或 Session类型如果group_concat_max_len 的值被设置为小等于 512，那么 GROUP_CONCAT 的返回值类型是 VARCHAR 或 VARBINARY；否则是 TEXT 或 BLOB。实际上，group_concat_max_len 的值可以设置非常大，但会受到参数max_allowed_packet 的限制</span><br></pre></td></tr></table></figure></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习总结 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
